@@ -1,0 +1,87 @@
+---
+title: "Self-assessment #3"
+author: Sicheng Wang
+format: 
+  pdf:
+    number-sections: true
+    toc: true
+    toc-depth: 1
+bibliography: packages.bib
+---
+
+# Take-away
+
+(@) Data can be obtained through manual download or programmatic download using functions such as `download.file(url = , destfile = )`.
+
+(@) `untar(tarfile = , exdir = )`  function can be used to uncompress a file.
+
+(@) Use `tempfile()` to create a temporary file to avoid leaving the unzipped file on the disk.
+
+(@) You can use `?` before a function name to check its usage.
+
+(@) Control statements like `if` can be utilized to prevent repetitive downloads when running the code multiple times.
+
+(@) `!` is used to negate an argument's value, changing it from `TRUE` to `FALSE` or vice versa.
+
+(@) API, or Application Programming Interface, refers to resources that enable interaction with R code.
+
+(@) The `unnest(cols = )` function from `tidyr` [@tidyr2024] can be used to expand variables that contain lists of variables within themselves.
+
+(@) `dir_create()` is a function that can be used to create a directory.
+
+(@) `write_csv()` function is used to save data frames as CSV files.
+
+(@) In the `readr` package [@readr2024], `read_file()` reads the entire file, whereas `read_lines()` reads text line by line. Additionally, the `readtext()` function from the `readtext` package [@readtext2024] can read multiple files simultaneously or extract text content from PDF and DOCX files.
+
+(@) `length()` function returns the number of lines in each file.
+
+(@) The `head()` function is used to preview the first few lines of each file.
+
+(@) The `tibble()` function from the `tibble` package [@tibble2023] is used to create data frames.
+
+(@) `pluck()` function from the `purrr` package [@purrr2023] is used to extract the first line node.
+
+(@) The `mutate()` function assigns values to columns.
+
+(@) `str_remove()`, `str_replace()`, and `str_extract()` are used to edit matched values. `str_subset()` is used to isolate vector elements. `str_split()` is used to split vector elements. `str_detect()` combined with `filter()` can identify matched patterns to edit them. `str_trim()` is used to remove whitespace.  
+
+(@) `separate_wider_delim()` function is used to separate a column by its delimiter.
+
+(@) `case_when()` function is used to change values according to different conditions, allowing for more than two conditions compared to `if`.
+
+(@) `group_by()` function is used to group data by specific variables.
+
+(@) The `dir_tree()` function creates a directory structure tree.
+
+(@) The `unnest_tokens()` function converts variables into words.
+
+(@) Setting `cache: true` allows results to be saved for later use, reducing the need for heavy traffic runs.
+
+(@) `left_join()` keeps data in the left dataset and includes matching data from the right dataset, while `full_join()` retains all observations from both datasets when they share a common attribute.
+
+(@) The `distinct()` function from the `dplyr` package [@dplyr2023] is used to eliminate redundancy in data.
+
+(@) `bind_rows()` is used to add rows from two datasets that share the same attributes.
+
+(@) In regular expressions, `+` matches one or more occurrences, `*` matches zero or more occurrences, and `?` makes these two regular expressions match the shortest possible match.
+
+(@) An idealized structure for the datasets can serve as a guideline during the curation and transformation of data.
+
+(@) Documentation should encompass code comments, prose descriptions, information about data origin files (such as source, name, URL, credentials, etc.), and a data dictionary file describing variables (`create_data_dictionary()`).
+
+(@) Acquisition involves obtaining data and storing it on a local computer, curation entails tidying the data into a tabular format while preserving the structure of the original data, and transformation involves customizing datasets to fit one's specific project requirements.
+
+(@) Normalization involves extracting artifacts from datasets.
+
+(@) Tokenization changes the units of observation.
+
+# Challenges
+The most challenging aspect for me is practicing the entire process on my own. Watching others code is one thing, but coding by myself is another.
+
+# Resources
+I primarily rely on the [textbook](https://qtalr.github.io/book/) and [Recipes](https://qtalr.github.io/qtalrkit/articles/) for guidance. Additionally, I consult ChatGPT when I encounter code I don't understand in the [textbook](https://qtalr.github.io/book/). Another resource I use is [Stack Overflow](https://stackoverflow.com/), where I often find answers or discussions about similar coding questions when searching on Google.
+
+# Explore
+I believe I would benefit from having more time to explore these processes on my own, especially when working with real data. I've noticed that many things differ from what's presented in the textbook, and this presents an opportunity for me to practice applying the knowledge I've learned to real situations.
+
+# References
